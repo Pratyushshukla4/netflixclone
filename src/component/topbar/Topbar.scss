@@ -1,0 +1,240 @@
+.topbar{
+    width: 99vw;
+    height: 70px;
+    //  border: 1px solid red; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    // color: #fff !important;---------->>>>>>
+    color: #0b0b0b;
+    z-index: 999;
+    /* overflow-x: hidden; */
+}
+// .scrolled{
+//     background-color: #0b0b0b;
+//     color: #fff;
+// }
+.lefttop{
+     width: 50%; 
+    // flex: 5;
+    height: 70px;
+    /* width: 70px; */
+    //  border: 1px solid blue; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+
+}
+.lleft{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    // flex: 2;
+    width: 20%;
+    height: 70px;
+    //  border: 1px solid rgb(197, 197, 221); 
+}
+.tital{
+    font-size: 30px;
+    color: crimson;
+}
+.navhead{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 8;
+    height: 70px;
+    // color: #fff;------------?????????????
+    color: #0b0b0b;
+    //  border-bottom: 1px solid gray; 
+}
+.head{
+    font-size: 20px;
+    text-decoration: none;
+     color: black; 
+    // color: #fff;
+    font-size: 500;
+}
+.righttop{
+     width: 50%; 
+    // flex: 5;
+    height: 70px;
+    /* width: 70px; */
+    //  border-bottom: 1px solid gray; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.rright{
+       width:  50%;
+
+    //    border-bottom: 1px solid gray; 
+       height: 70px;
+       display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lright{
+    width:   50%;
+    height: 70px;
+    //  border: 1px solid green; 
+    
+}
+.searchicon{
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    color: #fff !important;
+}
+.kid{
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+}
+.notification{
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.profile{
+    /* border: 1px solid red; */
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.drop{
+    /* border: 1px solid red;/ */
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    // &:hover{
+
+    //     .d30{
+    //         display: flex;
+    //     }
+    // }
+    
+}
+.dropdown{
+    // position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    // border: 1px solid red;
+    width: 50px;
+    height: 100px;
+
+    .d30{
+         background-color: #0b0b0b;
+        height: 70px;
+        width: 70px;
+        border-radius: 3px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        // border: 1px solid green;
+        // top: 30px;
+        position: absolute;
+        top: 45px;
+        display: none;
+
+    }
+
+    &:hover{
+        .d30{
+            display: flex
+        }
+    }
+    
+    }
+
+.d10{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 1100px) {
+   .lefttop{
+       width: 70%;
+   }
+   .righttop{
+       width: 30%;
+   }
+   .lright{
+       display: none;
+   }
+   .rright{
+       width: 100%;
+   }
+  }
+
+  @media only screen and (max-width: 800px) {
+      .disp{
+          display: none;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+
+    .topbar{
+        flex-direction: column;
+        height: auto;
+        .lefttop{
+            margin-bottom: 15px;
+            width: 100%;
+            border-bottom: 1px solid gray;
+        }
+        .righttop{
+            width: 90%;
+            border-bottom: 1px solid gray;
+                }
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+      .lefttop{
+          flex-direction: column;
+        //   width: auto;
+        height: 100px;
+        border-bottom:  1px solid gray; ;
+      }
+      .lleft{
+          height:  40px;
+          margin-bottom: 10px;
+          border-bottom:  1px solid gray; ;
+      }
+      .navhead{
+          height: 40px;
+          width: 100%;
+          
+      }
+      .righttop{
+        border-bottom:  1px solid gray; ;
+
+      }
+  
+  }
+
+   @media only screen and (max-width: 300px) {
+       .head{
+           font-size: 17px;
+       }
+
+  }
