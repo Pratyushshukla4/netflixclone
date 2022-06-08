@@ -15,8 +15,8 @@ const Topbar = () => {
   
   return (
     <>
-    <div className= "topbar">
-    {/* <div className={scrolled?"topbar scrolled" : "topbar"}> */}
+    
+ <div className={scrolled?"topbar scrolled" : "topbar"}> 
 
         <div className="lefttop">
             <div className="lleft">
